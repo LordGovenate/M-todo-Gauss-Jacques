@@ -1,8 +1,11 @@
-
 # Calculadora de Inversa Modular ✨  
 > App web para invertir matrices módulo **m** usando el método Gauss‑Jacques y mostrar **cada** paso con estilo minimalista‑dashboard.
 
 ---
+
+[Demo en vivo – Gauss-Jacques](https://gauss-jacques.govenate.com/)
+
+--
 
 ## 🚀 Funcionalidades
 
