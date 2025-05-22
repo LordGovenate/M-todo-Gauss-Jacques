@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Inversa Modular — Gauss-Jacques</title>
+
+  <!-- Fuente moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Hoja de estilos del nuevo diseño minimalista-dashboard -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Título principal -->
+  <h1>Calculadora de Inversa Modular <br><small>(Método Gauss-Jacques)</small></h1>
+
+  <!-- Tarjeta con los controles -->
+  <div class="card controls">
+    <label for="sizeInput">Tamaño&nbsp;N:</label>
+    <input type="number" id="sizeInput" value="3" min="1" max="100" />
+
+    <label for="modInput">Módulo&nbsp;m:</label>
+    <input type="number" id="modInput" value="256" min="2" />
+
+    <button id="randBtn">Generar matriz aleatoria</button>
+    <button id="calcBtn">Calcular inversa</button>
+  </div>
+
+  <!-- Tarjeta con la tabla de entrada -->
+  <div class="card matrix-container">
+    <table id="matrixInput" class="matrix"></table>
+  </div>
+
+  <!-- Tarjeta para los pasos y el resultado -->
+  <div id="steps" class="card"></div>
+
+  <!-- Lógica JavaScript (sin cambios de funcionalidad) -->
+  <script src="script.js"></script>
+</body>
+</html>

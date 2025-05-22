@@ -1,0 +1,109 @@
+/* Global reset y tipografía */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f7fa;
+  color: #333;
+  font-family: 'Inter', sans-serif;
+}
+/* Título de la página */
+h1 {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+/* Estilo base para "tarjetas" (contenedores) */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+/* Contenedor de controles con diseño flexible */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+}
+/* Etiquetas de los controles */
+.controls label {
+  font-weight: 500;
+  margin-right: 5px;
+}
+/* Campos de número de los controles */
+.controls input[type="number"] {
+  width: 80px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1rem;
+}
+/* Botones generales */
+button {
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
+button:hover {
+  filter: brightness(0.9);
+}
+/* Estilos específicos para cada botón */
+#randBtn {
+  background-color: #6c757d;
+  color: #fff;
+}
+#calcBtn {
+  background-color: #4a90e2;
+  color: #fff;
+}
+/* Contenedor de la tabla de entrada (desplazable horizontalmente) */
+.matrix-container {
+  overflow-x: auto;
+}
+/* Tabla de matriz (entrada y resultados) */
+table.matrix {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1em;
+}
+table.matrix td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  min-width: 40px;
+}
+/* Columna separadora en la matriz aumentada */
+td.separator {
+  border-left: 3px solid #888;
+}
+/* Resaltado de filas específicas */
+.pivot-row td {
+  background-color: #d0eaff;
+}
+.target-row td {
+  background-color: #e8ffe8;
+}
+/* Resaltado especial de la celda pivote */
+.pivot-cell {
+  outline: 2px solid #f44336;
+  outline-offset: -2px;
+}
+/* Párrafos en el área de pasos/resultados */
+#steps p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
